@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Col, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 
+// This page will show the user the boos that they have saved from the search. 
 
 function Books() {
   // Setting our component's initial state
@@ -15,7 +16,7 @@ function Books() {
   // Load all books and store them with setBooks
   useEffect(() => {
     loadBooks()
-  }, [])
+  })
 
   // Loads all books and sets them to books
   function loadBooks() {

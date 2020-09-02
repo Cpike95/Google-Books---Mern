@@ -2,10 +2,8 @@
 const router = require("express").Router();
 const searchController = require("../../controllers/searchController");
 
-
-// // const booksController = require("../../controllers/booksController");
-
 // // Matches with "/api/search"
+//Route for the search page. 
 router.use("/search")
     .get(searchController)
 
